@@ -113,3 +113,22 @@ p.leading-relaxed.text-white {
  .twelve h4 {
   color: red;
  }
+
+ p.leading-relaxed {
+  display: flex;
+  justify-content: center;
+ }
+
+form  {
+  display: block;
+  padding-left: 60px;
+
+ }
+ 
+
+
+#contact .text-white {
+  display: flex;
+  position: absolute;
+  left: 46.5vw
+}

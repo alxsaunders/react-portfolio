@@ -1,116 +1,100 @@
-import React, { Component } from 'react';
+import React, { useState } from "react";
 
-class Contact extends Component {
-  render() {
+const styles = {
+  background: {
+    background: "balck",
+    color: "white",
+  },
+  input: {
+    background: "#f87749",
+  },
+  button: {
+    background: "#f87749",
+  },
+};
 
-    if(this.props.data){
-      var name = this.props.data.name;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone= this.props.data.phone;
-      var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
+export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === "name") {
+      setName(inputValue);
+    } else if (inputType === "email") {
+      setEmail(inputValue);
+    } else {
+      setMessage(inputValue);
     }
+  };
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
 
-    if(this.props.repos){
-      var projectRepos = this.props.repos.projects.map(function(projects) {
-         return (
-            <li key={projects.title}>
-               <span>
-                  <a href={projects.repo} target="_blank">{projects.shorttitle}</a>
-               </span>
-            </li>
-         )
-      })
-    }
+    setName("");
+    setEmail("");
+    setMessage("");
+    alert(`Thank you for your message, ${name}!`);
+  };
+  return (
+    <section
+      id='contact'
+      style={styles.background}
+      className='justify-center flex flex-wrap px-10 py-20'
+    >
+      <form
+        name='contact'
+        className='lg:w-1/2 sm:w-full  flex flex-col justify-center'
+      >
+        <h2 className='pb-3 font-heading font-bold sm:text-4xl lg:text-6xl title-font'>
+          Send me a message!
+        </h2>
+        <p className='leading-relaxed '>
+          Feel free to reach out to me for job inquiries or any other questions!
+        </p>
+        <label className='leading-7 text-sm text-black'>Name</label>
+        <input
+          value={name}
+          type='text'
+          id='name'
+          name='name'
+          onChange={handleInputChange}
+          className='w-full bg-slate-800 rounded border border-stone-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-stone-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+        />
 
-
-    return (
-      <section id="contact">
-
-         <div className="row section-head">
-
-            <div className="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
-            </div>
-
-            <div className="ten columns">
-
-                  <p className="lead">{message}</p>
-
-            </div>
-
-         </div>
-
-         <div className="row">
-            <div className="eight columns">
-
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
-                  </div>
-
-                  <div>
-                     <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button className="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                     </span>
-                  </div>
-					</fieldset>
-				   </form>
-
-           <div id="message-warning"> Error boy</div>
-				   <div id="message-success">
-                  <i className="fa fa-check"></i>Your message was sent, thank you!<br />
-				   </div>
-           </div>
-
-
-            <aside className="four columns footer-widgets">
-               <div className="widget widget_contact">
-
-					   <h4>Location and Phone</h4>
-					   <p className="address">
-						   {name}<br />
-						   <span>{phone}</span><br />
-                     <span>{email}</span><br />
-                     {city}, {state} (willing to relocate)<br />
-					   </p>
-				   </div>
-
-               <div className="widget widget_tweets">
-                  <h4 className="widget-title">Project Repos (source code)</h4>
-                  <ul id="twitter">
-                     {projectRepos}
-                  </ul>
-		         </div>
-            </aside>
-      </div>
-   </section>
-    );
-  }
+        <div className='pb-4'>
+          <label className='leading-7 text-sm text-black'>Email</label>
+          <input
+            value={email}
+            type='email'
+            id='email'
+            name='email'
+            onChange={handleInputChange}
+            className='w-full bg-slate-800 rounded border border-stone-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-stone-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+          />
+        </div>
+        <div className='pb-4'>
+          <label className='leading-7 text-sm text-black'>Message</label>
+          <textarea
+            value={message}
+            id='message'
+            name='message'
+            onChange={handleInputChange}
+            className='w-full bg-slate-800 rounded border border-stone-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-stone-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'
+          />
+        </div>
+        <button
+          type='button'
+          onClick={handleFormSubmit}
+          className='text-white border-0 p-3 bg-black focus:outline-none rounded text-lg hover:bg-orange-400 hover:text-white'
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+  );
 }
-
-export default Contact;
