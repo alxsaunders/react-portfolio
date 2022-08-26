@@ -43,12 +43,22 @@ class Resume extends Component {
       <div className="row education">
          <div className="three columns header-col">
             <h1><span>Education</span></h1>
+            
          </div>
-
+         
          <div className="nine columns main-col">
             <div className="row item">
                <div className="twelve columns">
-                 {education}
+               <div><h3>University of Central Florida Coding Bootcamp Certificate
+            </h3> <h4>A+ Academic Average 2022
+               </h4></div>
+
+               <div><h3>CompTIA ITF+
+            Certificate
+      </h3> <h4>2019/2020</h4>
+            </div>
+
+
                </div>
             </div>
          </div>
@@ -76,7 +86,12 @@ class Resume extends Component {
 
          <div className="nine columns main-col">
 
-            <p>{skillmessage}
+            <p>VANILLA JAVASCRIPT / REACT.JS / JQUERY
+• NODE.JS / EXPRESS.JS / HANDLEBARS
+• MYSQL / SEQUELIZE
+• MONGODB / MONGOOSE
+• HTML / CSS / BOOTSTRAP
+• REST APIS
             </p>
 
 				<div className="bars">

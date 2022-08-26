@@ -109,3 +109,7 @@ p.leading-relaxed.text-white {
   font-size: 40px;
   padding: 10px;
  }
+
+ .twelve h4 {
+  color: red;
+ }
