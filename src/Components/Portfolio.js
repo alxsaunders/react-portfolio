@@ -120,9 +120,6 @@ export default function Projects() {
         
       </div>
 
-      <div className='pt-20 flex justify-center'>
-        <icon className='text-black animate-bounce justify-center self-end fas fa-chevron-down'></icon>
-      </div>
     </section>
   );
 }
