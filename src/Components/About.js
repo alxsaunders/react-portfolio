@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import pic from '../assets/me.jpg'
+import resume from '../assets/AlexSaunders.pdf';
 
 class About extends Component {
   render() {
@@ -14,7 +15,7 @@ class About extends Component {
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
       var email = this.props.data.email;
-      var resumeDownload = this.props.data.resumedownload;
+      var resumeDownload = "public\resume\AlexSaunders.pdf"
      
     }
 
@@ -27,7 +28,12 @@ class About extends Component {
          <div className="nine columns main-col">
             <h2>About Me</h2>
 
-            <p>{bio}</p>
+            <p>I am a hard-working and detail oriented professional full-stack
+            (MERN) software developer and a UCF Coding Bootcamp
+            graduate passionate about learning, researching, and writing
+               code. I look forward to finding an opportunity to take my
+                  programming skills and experience to a company where I can
+               continue to learn and grow in the software development field.</p>
             <div className="row">
                <div className="columns contact-details">
                   <h2>Contact Details</h2>
@@ -41,7 +47,8 @@ class About extends Component {
                </div>
                <div className="columns download">
                   <p>
-                     <a href={resumeDownload} className="button" target="_blank"><i className="fa fa-download"></i>Download Resume</a>
+                     
+                     <a href={resume} className="button" target="_blank"><i className="fa fa-download"></i>Download Resume</a>
                   </p>
                </div>
             </div>
