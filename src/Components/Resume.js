@@ -58,6 +58,10 @@ class Resume extends Component {
       </h3> <h4>2019/2020</h4>
             </div>
 
+            <div><h3>Full Sail University Bachelor of Science - Computer Science
+      </h3> <h4>2023 - present</h4>
+            </div>
+
 
                </div>
             </div>
@@ -91,7 +95,7 @@ class Resume extends Component {
 • MYSQL / SEQUELIZE
 • MONGODB / MONGOOSE
 • HTML / CSS / BOOTSTRAP
-• REST APIS
+• REST APIS / PhotoShop / Video Editing / Animation / C++ / C#
             </p>
 
 				<div className="bars">
