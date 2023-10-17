@@ -1,5 +1,6 @@
 import nexus from './assets/nexus.gif'
 import vines from './assets/vines.gif'
+import animation from './assets/animation.gif'
 
 export const projects = [
     {
@@ -10,7 +11,6 @@ export const projects = [
       description:
         "Users can create a profile to search for and favorite video games. Before buying a new video game, users can what others say about the games via reviews. The challenge was integrating an API with a separate dataset. **Awarded Overall Best Application in class.",
       image: nexus,
-      deployed: "https://intense-bastion-69389.herokuapp.com/",
       github: "https://github.com/Servbt/Nexus",
     },
     {
@@ -20,8 +20,16 @@ export const projects = [
       description:
         "Vines & Victuals is deisgned for users who have an idea of what they would like to eat or drink but are tired of settling for the same standard recipes they are accustomed to. V&V allows the user to input the main ingredient of what they are craving and matches them with mouth watering entrees and refreshing drinks that'll leave their tastebuds wanting more. **Awarded Overall Best Application in class. ",
       image: vines,
-      deployed: "https://jshuaaaa.github.io/vines-and-victuals/",
       github: "https://github.com/jshuaaaa/vines-and-victuals",
+    },
+    {
+      id: 3,
+      title: "Animation",
+      subtitle: "Adobe Animate, PhotoShop.",
+      description:
+        "Video of Some Animation Work",
+      image: animation,
+      Link: "https://www.youtube.com/watch?v=0taooeeNCPM",
     },
   
   ];

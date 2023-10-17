@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import pic from '../assets/me.jpg'
-import resume from '../assets/AlexSaunders.pdf';
+import pic from '../assets/me1.jpg'
+import resume from '../assets/Alex_Saunders.pdf';
 
 class About extends Component {
   render() {
@@ -28,12 +28,15 @@ class About extends Component {
          <div className="nine columns main-col">
             <h2>About Me</h2>
 
-            <p>I am a hard-working and detail oriented professional full-stack
-            (MERN) software developer and a UCF Coding Bootcamp
-            graduate passionate about learning, researching, and writing
-               code. I look forward to finding an opportunity to take my
-                  programming skills and experience to a company where I can
-               continue to learn and grow in the software development field.</p>
+            <p>I am a hard-working and detail-oriented graphic designer and aspiring
+               computer scientist/software developer. In addition, I am a UCF Coding
+               Boot Camp graduate passionate about learning, researching, and
+               writing code while I continue my pursuit of a bachelor's degree in
+               computer science. I also freelance in video creation and Photoshop
+               and have been doing it for multiple years. I look forward to finding an
+               opportunity to take my programming and design skills and experience
+               to a company where I can continue to learn and grow in these desired
+               fields.</p>
             <div className="row">
                <div className="columns contact-details">
                   <h2>Contact Details</h2>
