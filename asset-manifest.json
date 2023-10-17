@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.b166f2b4.css",
-    "main.js": "/react-portfolio/static/js/main.66bff010.js",
+    "main.js": "/react-portfolio/static/js/main.98ba0925.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/video.mp4": "/react-portfolio/static/media/video.c76e2c86c8074627dd3c.mp4",
     "static/media/nexus.gif": "/react-portfolio/static/media/nexus.b0e91cf9fede2c2bc07a.gif",
     "static/media/vines.gif": "/react-portfolio/static/media/vines.bddfbb4393c06ffd0e7f.gif",
-    "static/media/AlexSaunders.pdf": "/react-portfolio/static/media/AlexSaunders.810419bb3edf816cf1b9.pdf",
-    "static/media/me.jpg": "/react-portfolio/static/media/me.49001c7789c6f5b4d684.jpg",
+    "static/media/animation.gif": "/react-portfolio/static/media/animation.3871397aa693f5d9f168.gif",
+    "static/media/me1.jpg": "/react-portfolio/static/media/me1.b39762b2c9def407bc34.jpg",
+    "static/media/Alex_Saunders.pdf": "/react-portfolio/static/media/Alex_Saunders.83c92afe83dba4391fcc.pdf",
     "index.html": "/react-portfolio/index.html",
     "main.b166f2b4.css.map": "/react-portfolio/static/css/main.b166f2b4.css.map",
-    "main.66bff010.js.map": "/react-portfolio/static/js/main.66bff010.js.map",
+    "main.98ba0925.js.map": "/react-portfolio/static/js/main.98ba0925.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b166f2b4.css",
-    "static/js/main.66bff010.js"
+    "static/js/main.98ba0925.js"
   ]
 }
